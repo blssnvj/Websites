@@ -2,11 +2,11 @@
   box-sizing: border-box;
 }
 .container {
-  background-color: bisque;
   display: grid; /*Grid Style page Layout*/
   grid-gap: 1rem;
   grid-template-areas:
     "navbar navbar navbar navbar"
+    "section section section aside"
     "section section section aside"
     "footer footer footer footer ";
   grid-template-columns: repeat(autofit, minmax(300px, 1fr));
@@ -20,30 +20,22 @@
   width: 4rem;
 }
 #navbar {
-  background-image: url("/Pics/Wallpaper.jpg");
-  opacity: 0.6;
-  border-radius: 16px;
+  overflow: auto;
+  color: rgb(95, 180, 255);
   grid-area: navbar;
 }
 #section {
-  background-image: url("/Pics/peter-vanosdall-ktpyjH2h9xs-unsplash.jpg");
-  opacity: 0.9;
-  border-radius: 8px;
-  color: aliceblue;
+  width: 100px;
+  height: 100vh;
+  color: rgb(95, 180, 255);
   grid-area: section;
 }
 #aside {
-  background-image: url("/Pics/evgeni-tcherkasski-fk39KWyIzNE-unsplash.jpg");
-  opacity: 0.6;
-  border-radius: 8px;
-  color: aliceblue;
+  color: rgb(95, 180, 255);
   grid-area: aside;
 }
 footer {
-  background-color: black;
-  opacity: 0.9;
-  border-radius: 16px;
-  color: aliceblue;
+  color: rgb(95, 180, 255);
   grid-area: footer;
 }
 #navbar ul {
@@ -53,10 +45,10 @@ footer {
   display: inline;
 }
 #navbar ul li a {
-  color: wheat;
+  color: rgb(95, 180, 255);
   text-decoration: none;
-  padding: 10px;
-  margin: 5px;
+  padding: 8px;
+  margin: 2px;
 }
 #navbar ul li a:hover {
   color: yellowgreen;
@@ -75,4 +67,10 @@ footer img {
   padding: 4px;
   float: right;
   margin-top: 0px;
+}
+#kwc {
+  width: 8rem;
+}
+#cpu {
+  width: 8rem;
 }
