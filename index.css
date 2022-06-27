@@ -1,53 +1,78 @@
-.container{
-    display: grid; /*Grid Style page Layout*/
-    grid-gap: 1rem;
-    grid-template-areas: 
-    'navbar navbar navbar navbar' 
-    'section section section aside'
-    'footer footer footer footer ';
+* {
+  box-sizing: border-box;
 }
-.item{
-    font-family: 'Yellowtail', cursive; /*Google Fonts*/
-    padding: 12px 23px;
+.container {
+  background-color: bisque;
+  display: grid; /*Grid Style page Layout*/
+  grid-gap: 1rem;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "section section section aside"
+    "footer footer footer footer ";
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
 }
-#logo{
-    float: left;
-    width: 4rem;
+.item {
+  font-family: "Yellowtail", cursive; /*Google Fonts*/
+  padding: 12px 23px;
 }
-#navbar{
-    grid-area: navbar;
+#logo {
+  float: left;
+  width: 4rem;
 }
-#section{
-    grid-area: section;
+#navbar {
+  background-image: url("/Pics/Wallpaper.jpg");
+  opacity: 0.6;
+  border-radius: 16px;
+  grid-area: navbar;
 }
-#aside{
-    grid-area: aside;
+#section {
+  background-image: url("/Pics/peter-vanosdall-ktpyjH2h9xs-unsplash.jpg");
+  opacity: 0.9;
+  border-radius: 8px;
+  color: aliceblue;
+  grid-area: section;
 }
-footer{
-    grid-area: footer;
+#aside {
+  background-image: url("/Pics/evgeni-tcherkasski-fk39KWyIzNE-unsplash.jpg");
+  opacity: 0.6;
+  border-radius: 8px;
+  color: aliceblue;
+  grid-area: aside;
 }
-#navbar ul{
-    list-style: none;
+footer {
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 16px;
+  color: aliceblue;
+  grid-area: footer;
 }
-#navbar ul li{
-    display: inline;
+#navbar ul {
+  list-style: none;
 }
-#navbar ul li a{
-    text-decoration: none;
-    padding: 10px;
-    margin: 5px;
+#navbar ul li {
+  display: inline;
 }
-#search{
-    border: 2px solid rgb(22, 10, 10);
-    border-radius: 8px;
-    float: right;
+#navbar ul li a {
+  color: wheat;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
 }
-#pic{
-    width: 8rem;
+#navbar ul li a:hover {
+  color: yellowgreen;
 }
-footer img{   /*Footer Social Media Icons*/
-    width: 2rem;
-    padding: 8px;
-    margin-bottom: 0;
-    float: right;
+#search {
+  border: 2px solid rgb(22, 10, 10);
+  border-radius: 8px;
+  float: right;
+}
+#pic {
+  width: 8rem;
+}
+footer img {
+  /*Footer Social Media Icons*/
+  width: 3rem;
+  padding: 8px;
+  margin-bottom: 0;
+  float: right;
 }
