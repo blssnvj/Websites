@@ -1,0 +1,60 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#fb {
+    width: 15rem;
+    margin-top: 200px;
+}
+.brdr {
+  border: 2px solid rgb(209, 205, 205);
+  border-radius: 4px;
+  padding: 10px;
+  margin: 50px;
+  margin-right: 200px;
+  align-self: center;
+  justify-self: center;
+}
+#eMail {
+  border: 2px solid rgb(124, 124, 124);
+  border-radius: 4px;
+  font-size: 17px;
+  width: 330px;
+  padding: 14, 16px;
+  margin: 4px;
+}
+#pwd {
+  border: 2px solid rgb(124, 124, 124);
+  border-radius: 4px;
+  font-size: 17px;
+  width: 330px;
+  padding: 14, 16px;
+  margin: 4px;
+}
+#btn {
+  border: 0px solid #1877f2;
+  background-color: #1877f2;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 0px, 16px;
+  width: 332px;
+  margin: 4px;
+}
+#btn2{
+    border: 0px solid #18f285;
+    background-color: #1ff218;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 0px, 16px;
+    margin-left: 70px;
+}
+#forpwd {
+  margin-left: 100px;
+}
+#tag {
+  font-size: 20px;
+}
+#lg {
+  margin-top: 200px;
+}
