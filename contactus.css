@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+  .container {
+    display: grid; /*Grid Style page Layout*/
+    grid-gap: 1rem;
+    grid-template-areas:
+      "navbar navbar navbar navbar"
+      "section section section aside"
+      "section section section aside"
+      "footer footer footer footer ";
+    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+  }
+  .item {
+    font-family: "Yellowtail", cursive; /*Google Fonts*/
+    padding: 12px 23px;
+  }
+  #logo {
+    float: left;
+    width: 4rem;
+  }
+  #navbar {
+    overflow: auto;
+    color: rgb(95, 180, 255);
+    grid-area: navbar;
+  }
+  #navbar ul {
+    list-style: none;
+  }
+  #navbar ul li {
+    display: inline;
+  }
+  #navbar ul li a {
+    color: rgb(95, 180, 255);
+    text-decoration: none;
+    padding: 8px;
+    margin: 2px;
+  }
+  #navbar ul li a:hover {
+    color: yellowgreen;
+  }
+  #search {
+    border: 2px solid rgb(22, 10, 10);
+    border-radius: 8px;
+    float: right;
+  }
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
