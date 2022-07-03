@@ -58,7 +58,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #04aa6d;
+  background-color: #1504aa;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -67,7 +67,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #4854ff;
 }
 footer img {
   /*Footer Social Media Icons*/
